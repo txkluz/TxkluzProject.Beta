@@ -704,6 +704,10 @@ local Section = Tab:NewSection("Setting")
 Section:NewKeybind("Select Keybind", "กดเพื่อพับสคริป", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
+
+Section:NewButton("Teleport", "Teleport to rip", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-22.203954696655273, -32.45552062988281, 1921.55078125)
+end)
 --setting
 Section:NewButton("Noclip", "bypass", function()
 local Noclip = nil
